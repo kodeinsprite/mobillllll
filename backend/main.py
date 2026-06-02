@@ -1165,6 +1165,8 @@ def _load_and_process() -> tuple[pd.DataFrame, str]:
         out["gorsel_link"] = ""
 
     
+    out = _apply_category_mappings(out)
+    
     _cache["path"] = path
     _cache["mtime"] = mtime
     _cache["data"] = out
@@ -1182,8 +1184,7 @@ def dashboard(
     renk: str | None = Query(None, description="E-TİCARET RENK filtresi; boş = tümü"),
 ):
     metrics, data_filename = _load_and_process()
-    metrics = _apply_category_mappings(metrics)
-
+    
     result: dict = {"meta": {"data_file": data_filename}}
 
     if view in ("all", "best"):

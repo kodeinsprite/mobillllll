@@ -55,9 +55,10 @@ const analyticsMetric = ref('satis') // satis | ciro | kar | st_pct
 
 const navActive = ref('top10')
 const showHelp = ref(false)
-const isDarkMode = ref(true)
+const isDarkMode = ref(false)
 
-onMounted(() => {
+onMounted(async () => {
+  // Tema tercihini yükle
   const savedMode = localStorage.getItem('theme')
   if (savedMode) {
     isDarkMode.value = savedMode === 'dark'
