@@ -1,0 +1,11 @@
+order_id,product_id,product_name,sale_date,quantity,revenue
+1,101,Running Shoes,2026-01-03,5,500
+2,102,Yoga Pants,2026-01-04,2,180
+3,101,Running Shoes,2026-01-10,3,300
+4,103,Water Bottle,2026-01-11,10,150
+5,102,Yoga Pants,2026-01-12,1,90
+6,104,Fitness Tracker,2026-01-13,4,400
+7,101,Running Shoes,2026-01-17,6,600
+8,103,Water Bottle,2026-01-18,5,75
+9,104,Fitness Tracker,2026-01-19,2,200
+10,105,Gym Gloves,2026-01-20,8,240
